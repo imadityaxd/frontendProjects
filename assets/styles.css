@@ -1,0 +1,64 @@
+:root{
+    --grey : hsl(0, 0%, 27%);
+    --blue : hsl(212, 100%, 50%);
+    --white : hsl(0, 0%, 100%);
+    --lightgrey: hsl(212, 45%, 89%);
+    --darkblue: hsl(217, 53%, 15%);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Hanken Grotesk';
+    background-color: var(--lightgrey);
+}
+.header{
+    color:var(--darkblue);
+    font-size: 30px;
+    font-weight: 800;
+    margin: auto;
+    padding:20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding:20px;
+}
+
+.cards .card{
+    background-color: var(--white);
+    width:240px;
+    padding:20px;
+    border-radius:8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.cards .card .card-img{
+    border-radius: 5px;
+}
+
+.cards .card .card-title{
+    font-size: 18px;
+    padding-top:10px;
+    color: var(--darkblue);
+    
+}
+.cards .card .card-text{
+    color: var(--grey);
+    padding:10px 0;
+    font-size: 16px;
+}
+
+.cards .card .btn{
+    background-color: var(--blue);
+    color:var(--white) ;
+    padding:5px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: auto;
+    text-decoration: none;
+}

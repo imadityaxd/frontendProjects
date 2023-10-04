@@ -1,0 +1,129 @@
+:root{
+    /*Primary */
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --white: hsl(0,0%,100%);
+
+/*Neutral*/
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Red Hat Display';
+    font-size:16px;
+    background-image: url(./images/pattern-background-desktop.svg);
+}
+
+.card{
+    width:300px;
+    margin:20px auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    color: var(--Darkblue);
+}
+.card .card-img{
+    width:300px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card .card-title{
+    font-size: 24px;
+    font-weight: 900;
+    padding-top:20px;
+    
+}
+.card .card-text{
+    padding:15px 30px;
+    color:var(--Desaturatedblue);
+    font-weight: 500;
+    font-size: 14px;
+}
+.card .bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    padding:10px;
+    font-size: 12px;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    border-radius: 5px;
+    width:70%;
+}
+.card .bar .info .text{
+    font-weight: 900;
+}
+.card .bar .btn-1{
+    text-decoration: none;
+    font-weight: 700;
+    color:var(--Brightblue);
+}
+.btn{
+    margin:20px auto;
+    background-color: var(--Brightblue);
+    padding:10px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn a{
+    text-decoration: none;
+    color:var(--white);
+    font-weight: 900;
+}
+.btn-2{
+    padding:0px 20px 20px 20px;
+}
+.btn-2 a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--Desaturatedblue);
+}
+/* navigation buttons code */
+
+.buttons{
+    display :flex;
+    justify-content: space-around;
+    width:300px;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 700;
+}
+.buttons a{
+    text-decoration: none;
+    color:white;
+}
+
+.buttons .back{
+    background-color: hsl(218, 44%, 22%);
+}
+.buttons .next{
+    background-color: hsl(219, 76%, 52%);
+}
+.buttons .home{
+    background-color: hsl(0,0%,100%);
+}
+.buttons .home a{
+    color:hsl(0, 0%, 25%);
+}
+.buttons .next,.back,.home{
+    width:24%;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+}
+.buttons .next:hover,.back:hover,.home:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}

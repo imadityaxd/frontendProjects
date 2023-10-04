@@ -1,0 +1,6 @@
+[submodule "calculator_component"]
+	path = calculator_component
+	url = https://github.com/imadityaxd/calculator_component.git
+[submodule "results_summary_component"]
+	path = results_summary_component
+	url = https://github.com/imadityaxd/results_summary_component.git
